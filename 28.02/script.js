@@ -24,13 +24,8 @@ console.log(cube())
 name (например, «Василий») и выводить строку (в нашем случае «Привет, Василий»).
 В случае отсутствующего параметра выводить «Привет, гость»
 */
-function getName() {
-    let name = prompt('Как Вас зовут?')
-    if(name === ''){
-        alert('Привет, гость');
-    }else {
-        alert('Привет,' + name);
-    }
+function getName(name = 'гость') {
+   alert(`Привет ${name}`)
 }
 getName()
 
