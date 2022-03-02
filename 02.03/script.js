@@ -53,5 +53,11 @@ const data = [1, 2, 3];
 myFunc(data);  // [3, 2, 1];
 */
 const data = [1,2,3];
-let newData = data.reverse();
-console.log(newData);
+function myFunct(data) {
+    let mas = [];
+    for (let i = data.length - 1; i >= 0; i--){
+        mas.push(data[i]);
+    }
+    return mas;
+}
+console.log(myFunct(data));
