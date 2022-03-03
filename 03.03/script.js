@@ -46,4 +46,4 @@ function fuctorial(n) {
     }
     return result
 }
-fuctorial(7);
+console.log(fuctorial(7))
