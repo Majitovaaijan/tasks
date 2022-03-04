@@ -1,0 +1,10 @@
+#start, #result{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 20px;
+}
