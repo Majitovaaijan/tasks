@@ -42,9 +42,9 @@ let number = 0;
 let fnStart = ()=> {
     prm = prompt('Введите число')
     while(prm !=999){
-        prm = prompt('Введите число')
         result+=1;
-        number+=Number(prm)
+        number+=Number(prm);
+        prm = prompt('Введите число');
     }
     //return alert(number)
 }
