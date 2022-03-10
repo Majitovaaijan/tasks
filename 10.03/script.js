@@ -8,3 +8,4 @@ let time3 = document.querySelector('#second');
 
 
 let count = 0;
+let intervalID;
