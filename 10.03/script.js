@@ -9,3 +9,18 @@ let time3 = document.querySelector('#second');
 
 let count = 0;
 let intervalID;
+
+btn1.onclick = function start() {
+    intervalID = setInterval(function () {
+        time3.textContent = count
+        count++
+    }, 1000)
+}
+
+btn2.onclick = () =>{
+    clearInterval(intervalID)
+}
+
+btn3.onclick = () =>{
+    time3.textContent = count = 0;
+}
