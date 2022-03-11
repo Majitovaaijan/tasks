@@ -54,7 +54,7 @@ function startTimer() {
     if(second > 9){
         time3.textContent = second;
     }
-    if(second >= 59){
+    if(second >= 60){
         minute++;
         second = 0;
         time3.textContent = '0' + second;
