@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="all">
+    <div class="container">
+        <h1 class="questionnaire">Анкета для корпоративных клиентов</h1>
+        <div class=""></div>
+        <p class="personal">Личные данные</p>
+        <form>
+            <input class="information info-1" id="surname" type="text" placeholder="Фамилия">
+            <input class="information info-2" id="name" type="text" placeholder="Имя">
+            <input class="information info-3" id="patronymic" type="text" placeholder="Отчество">
+        </form>
+        <p class="passport">Паспортные данные</p>
+        <form>
+            <input class="birth" id="birth" type="date">
+            <input class="place" id="address" type="text" placeholder="Место проживания по прописке">
+            <input class="inform an" id="serial-number" type="text" placeholder="Серийный номер AN/ID">
+            <input class="inform" id="inn" type="text" placeholder="ИНН">
+            <input class="inform" id="extradition" type="date">
+            <input class="inform an" id="contact-number" type="number" placeholder="Контактный номер">
+            <input class="inform" id="mail" type="text" placeholder="Электронный адрес">
+            <select class="inform" name="bank" id="bank-name">
+                <option value="0">Наименование банка</option>
+                <option value="optima">Optima Bank</option>
+                <option value="bakai">Bakai Bank</option>
+                <option value="kicb">KICB</option>
+                <option value="dcb">Dos Credo Bank</option>
+            </select>
+            <input class="home an" id="fact-address" type="text" placeholder="Фактическое место проживания">
+        </form>
+        <button class="next" id="next">Далее</button>
+    </div>
+</div>
+<script src="script1.js"></script>
+</body>
+</html>

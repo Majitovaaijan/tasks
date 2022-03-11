@@ -1,0 +1,125 @@
+
+body{
+    background-color: black;
+}
+.all{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 700px;
+    height: 600px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+}
+.questionnaire{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: Sora, serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.personal{
+
+    font-size: 17px;
+    line-height: 18px;
+    font-family: Sora, serif;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+.information{
+    width: 180px;
+    height: 48px;
+    border: 1px solid #AEAEAE;
+    border-radius: 8px;
+    padding-left:16px;
+    opacity: 0.5;
+}
+
+.info-1{
+    margin-left: 24px;
+    margin-right: 8px;
+}
+.info-2{
+    margin-right: 8px;
+}
+.passport{
+    font-size: 17px;
+    line-height: 18px;
+    margin-left: 24px;
+}
+.birth{
+    width: 180px;
+    height: 48px;
+    opacity: 0.5;
+    border: 1px solid #AEAEAE;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-left: 24px;
+    margin-right: 8px;
+    padding-left: 16px;
+}
+.place{
+    width: 408px;
+    height: 48px;
+    opacity: 0.5;
+    border: 1px solid #AEAEAE;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 16px;
+}
+
+.inform{
+    width: 200px;
+    height: 48px;
+    opacity: 0.5;
+    border: 1px solid #AEAEAE;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 16px;
+    margin-top: 16px;
+    margin-right: 8px;
+}
+
+.an{
+    margin-left: 24px;
+}
+.home{
+    width: 408px;
+    height: 48px;
+    opacity: 0.5;
+    border: 1px solid #AEAEAE;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 16px;
+    margin-top: 16px;
+    margin-right: 8px;
+}
+
+.next{
+    border: 1px solid black;
+    background-color: black;
+    width: 384px;
+    height: 48px;
+    margin-top: 60px;
+    margin-left: 140px;
+    padding: 10px 0;
+    color: white;
+}
+
+.next a{
+    text-decoration: none;
+    color:white;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+
+

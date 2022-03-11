@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+<div class="all">
+    <div class="container">
+        <h3 class="income">Данные о ваших доходах</h3>
+        <form>
+            <input class="org ind mean" type="text" id="org-name" placeholder="Наименование организации">
+            <input class="position mean" type="text" id="position" placeholder="Должность">
+            <input class="salary ind mean" type="text" id="salary" placeholder="Заработная плата в месяц">
+            <input class="salary mean" type="text" id="last-salary" placeholder="Заработная Плата за посл. 3 месяца">
+            <h4 class="credit ind">Сведения о кредите</h4>
+            <input class="phone ind mean" type="text" id="phone" placeholder="Покупка телефона ( наименование товара)">
+            <input class="position mean ind" type="text" id="price" placeholder="Стоимость товара">
+            <input class="position mean" type="text" id="quantity" placeholder="Количество товара">
+            <input class="position mean" type="text" id="total" placeholder="Итого сумма кредита">
+            <select class="mean position-1 ind" name="credit-type" id="credit-type">
+                <option disabled selected  hidden value="0">Вид кредита</option>
+                <option value="1">Рассрочка</option>
+                <option value="2">Кредит</option>
+            </select>
+            <select class="mean position-1" name="credit-term" id="credit-term">
+                <option disabled selected  hidden value="0">Срок кредита ( мес)</option>
+                <option value="1">3 месяца</option>
+                <option value="2">6 месяцев</option>
+                <option value="3">9 месяцев</option>
+                <option value="4">12 месяцев</option>
+            </select>
+            <select class="phone mean ind" name="place" id="place">
+                <option disabled selected  hidden value="0">Точка получения товара</option>
+                <option value="1">ТЦ "Азия Молл" пр. Айтматова, 3, ТЦ «Asia Mall», этаж 0</option>
+                <option value="2">ТЦ ГУМ "Чынар" пр.Чуй 92, ТРК ГУМ «Чынар», этаж -1 , бутик M9 (северная сторона)</option>
+                <option value="3">ТЦ «Beta Stores - 2» ул. Юнусалиева 177/2,торговый центр «Beta Stores - 2»</option>
+                <option value="4">ТЦ Vefa Center ул. Горького 27/1,"Vefa Center",1 этаж. Бутик № 20</option>
+                <option value="5">ТЦ «Беш-Сары Сити» Бейшеналиева 42А, ТЦ Беш Сары-Сити</option>
+                <option value="6">ТРЦ «Аламедин Гранд» пр. Жибек Жолу, 150 ТРЦ «Аламедин Гранд», 1 этаж, Бутик №1 (вход с ул. Алма-Атинская)</option>
+            </select>
+            <button id="registration">Оформить заявку</button>
+        </form>
+    </div>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
