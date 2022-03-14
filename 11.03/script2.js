@@ -1,7 +1,6 @@
 let btnRegistration = document.querySelector('#registration');
 
-btnRegistration.onclick = (event) =>{
-    event.preventDefault();
+btnRegistration.onclick = () =>{
 
 let orgName = document.querySelector('#org-name');
 let position = document.querySelector('#position');
@@ -28,5 +27,20 @@ let object ={
     credit_term: creditTerm.value,
     place: place.value
 }
-console.log(object);
+
+    let modal = document.querySelector('#modal');
+    const showNotification = () => {
+        modal.textContent = 'Заполните обязательные данные';
+        modal.classList.add('d-block');
+        setTimeout(hideNotification,4000);
+    }
+    const hideNotification = () => {
+        modal.classList.remove('d-block')
+    }
+
+    if(salary === ''){
+        showNotification();
+    }else{
+        console.log(object);
+    }
 }

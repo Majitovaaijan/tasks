@@ -34,15 +34,15 @@ btnNext.onclick = () => {
         modal.classList.add('d-block');
         setTimeout(hideNotification,4000);
     }
-        const hideNotification = () => {
-            modal.classList.remove('d-block')
-        }
+    const hideNotification = () => {
+        modal.classList.remove('d-block')
+    }
 
-        if(surName == '' || name == '' || serialNumber == '' || inn == ''|| extradition == ''){
+    if(surName == '' || name == '' || serialNumber == '' || inn == ''|| extradition == ''){
         showNotification();
-        }else{
-            console.log(object);
-            window.location.href = 'index2.html';
+    }else{
+        console.log(object);
+        window.location.href = 'index2.html';
     }
 
 }
