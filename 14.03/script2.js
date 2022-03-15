@@ -32,7 +32,7 @@ btnRegistration.onclick = () =>{
     const showNotification = () => {
         modal.textContent = 'Заполните обязательные данные';
         modal.classList.add('d-block');
-        setTimeout(hideNotification,4000);
+        setTimeout(hideNotification,1000);
     }
     const hideNotification = () => {
         modal.classList.remove('d-block')
@@ -42,5 +42,6 @@ btnRegistration.onclick = () =>{
         showNotification();
     }else{
         console.log(object);
+        window.localStorage.setItem('object', JSON.stringify(object));
     }
 }

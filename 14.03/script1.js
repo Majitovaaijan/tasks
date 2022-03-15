@@ -14,6 +14,13 @@ btnNext.onclick = () => {
     let bankName = document.querySelector('#bank-name');
     let factAddress = document.querySelector('#fact-address');
 
+    let modal = document.querySelector('#modal');
+    const showNotification = () => {
+        modal.textContent =  'Заполните обязательные данные';
+        modal.classList.add('notification');
+
+    }
+
     let object = {
         surname: surName.value,
         name: name.value,
@@ -28,22 +35,15 @@ btnNext.onclick = () => {
         bank_name: bankName.value,
         fact_address: factAddress.value
     }
-    let modal = document.querySelector('#modal');
-    const showNotification = () => {
-        modal.textContent = 'Заполните обязательные данные';
-        modal.classList.add('d-block');
-        setTimeout(hideNotification,4000);
-    }
-    const hideNotification = () => {
-        modal.classList.remove('d-block')
-    }
 
-    if(surName == '' || name == '' || serialNumber == '' || inn == ''|| extradition == ''){
-        showNotification();
-    }else{
+    if(surName.value === '' || name.value === '' || serialNumber.value === '' || inn.value === ''|| extradition.value === ''){
+        return setTimeout(showNotification,1000);
+    } else{
         console.log(object);
+        window.localStorage.setItem('object', JSON.stringify(object))
         window.location.href = 'index2.html';
     }
+
 
 }
 

@@ -12,7 +12,7 @@ body{
 
 .container{
     width: 700px;
-    height: 600px;
+    height: 650px;
     border: 1px solid white;
     background-color: white;
     border-radius: 8px;
@@ -122,21 +122,20 @@ body{
 }
 
 .notification{
-    width: 500px;
-    height: 100px;
-    position: relative;
+    width: 250px;
+    height: 20px;
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: 0.25rem;
-    top: -45px;
+    /*margin-top: 45px;*/
     color: #084298;
     background-color: #cfe2ff;
-    display: none;
+
 }
 
-.d-block{
-    display: block!important;
-}
+/*.d-block{*/
+/*    display: block!important;*/
+/*}*/
 
 
