@@ -40,7 +40,7 @@ btnNext.onclick = () => {
         return setTimeout(showNotification,1000);
     } else{
         console.log(object);
-        window.localStorage.setItem('object', JSON.stringify(object))
+        localStorage.setItem('object', JSON.stringify(object))
         window.location.href = 'index2.html';
     }
 

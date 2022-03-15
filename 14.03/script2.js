@@ -42,6 +42,6 @@ btnRegistration.onclick = () =>{
         showNotification();
     }else{
         console.log(object);
-        window.localStorage.setItem('object', JSON.stringify(object));
+        localStorage.setItem('object', JSON.stringify(object));
     }
 }
