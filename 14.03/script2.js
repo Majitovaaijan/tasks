@@ -38,7 +38,7 @@ btnRegistration.onclick = () =>{
         modal.classList.remove('d-block')
     }
 
-    if(salary === ''){
+    if(salary.value === ''){
         showNotification();
     }else{
         console.log(object);
